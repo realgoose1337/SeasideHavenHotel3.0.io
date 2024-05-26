@@ -1,0 +1,611 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="9611913" data-tilda-page-id="49532499" data-tilda-page-alias="restaurant" data-tilda-formskey="3723544bbbd9c328e1289e53e9611913" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-root-zone="pro" ><div id="rec753177760" class="r t-rec" style=" " data-animationappear="off" data-record-type="602" ><!-- T602 --><div class="t602"><div class="t602__indicator" style="background:#ffa60d;"></div> </div><script>t_onReady(function () {
+t_onFuncLoad('t602_init', function () {
+t602_init('753177760');
+});
+});</script></div><div id="rec753177761" class="r t-rec" style=" " data-animationappear="off" data-record-type="257" ><!-- T228 --><div id="nav753177761marker"></div><div class="tmenu-mobile" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">&nbsp;</div><button type="button" 
+class="t-menuburger t-menuburger_first " 
+aria-label="Навигационное меню" 
+aria-expanded="false"><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span></button><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger') &&
+!burger.closest('.t199__js__menu-toggler')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('753177761');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+padding: 0;
+border: none;
+background-color: transparent;
+outline: none;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: transform .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec753177761 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><style> #rec753177761 .tmenu-mobile__burgerlogo a { font-size: 30px; color: #ffffff; letter-spacing: 2.5px; }</style><style> #rec753177761 .tmenu-mobile__burgerlogo__title { color: #ffffff; letter-spacing: 2.5px; } @media screen and (min-width: 480px) { #rec753177761 .tmenu-mobile__burgerlogo__title { font-size: 30px; } }</style><div id="nav753177761" class="t228 t228__positionfixed tmenu-mobile__menucontent_hidden" style="background-color: rgba(0,0,0,0.0); " data-bgcolor-hex="#000000" data-bgcolor-rgba="rgba(0,0,0,0.0)" data-navmarker="nav753177761marker" data-appearoffset="" data-bgopacity-two="60" data-menushadow="" data-menushadow-css="" data-bgopacity="0.0" data-bgcolor-rgba-afterscroll="rgba(0,0,0,0.60)" data-menu-items-align="right" data-menu="yes"><div class="t228__maincontainer " style=""><div class="t228__padding40px"></div><div class="t228__leftside"><div class="t228__leftcontainer"><a href="/home" class="t228__imgwrapper" ><div class="t228__logo t-title" field="title"><em style="font-family: Georgia;">Seaside</em></div></a></div></div><div class="t228__centerside t228__menualign_right"><nav class="t228__centercontainer"><ul role="list" class="t228__list t-menu__list"><li class="t228__list_item" 
+style="padding:0 15px 0 0;"><a class="t-menu__link-item" 
+href="#about" data-menu-submenu-hook="" data-menu-item-number="1"
+>О ресторане</a></li><li class="t228__list_item" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#menu" data-menu-submenu-hook="" data-menu-item-number="2"
+>Меню</a></li><li class="t228__list_item" 
+style="padding:0 0 0 15px;"><a class="t-menu__link-item" 
+href="#rec753177777" data-menu-submenu-hook="" data-menu-item-number="3"
+>Вернуться</a></li></ul></nav></div><div class="t228__rightside"><div class="t228__rightcontainer"><div class="t228__right_buttons"><div class="t228__right_buttons_wrap"><div class="t228__right_buttons_but"><a href="#contact" target="" class="t-btn t-btn_md " style="color:#ffffff;border:2px solid #ffffff;border-radius:50px; -moz-border-radius:50px; -webkit-border-radius:50px;" data-buttonfieldset="button"
+>Контакты</a></div></div></div></div></div><div class="t228__padding40px"></div></div></div><style>@media screen and (max-width: 980px) {
+#rec753177761 .t228__leftcontainer {
+padding: 20px;
+}
+#rec753177761 .t228__imglogo {
+padding: 20px 0;
+}
+#rec753177761 .t228 {
+position: static;
+}
+}</style><script>window.addEventListener('resize', t_throttle(function () {
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('753177761', '.t228');
+});
+}));
+t_onReady(function () {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t228__list_item a');
+});
+t_onFuncLoad('t_menu__findAnchorLinks', function () {
+t_menu__findAnchorLinks('753177761', '.t228__list_item a');
+});
+t_onFuncLoad('t228__init', function () {
+t228__init('753177761');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('753177761', '.t228');
+});
+t_onFuncLoad('t_menu__interactFromKeyboard', function () {
+t_menu__interactFromKeyboard('753177761');
+});
+t_onFuncLoad('t_menu__changeBgOpacity', function () {
+t_menu__changeBgOpacity('753177761', '.t228');
+window.addEventListener('scroll', t_throttle(function () {
+t_menu__changeBgOpacity('753177761', '.t228');
+}));
+});
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('753177761', '.t228');
+});
+});</script><!--[if IE 8]><style>#rec753177761 .t228 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000', endColorstr='#D9000000');
+}</style><![endif]--><style>@media (hover: hover), (min-width: 0\0) {#rec753177761 .t-btn:not(.t-animate_no-hover):hover {border-color: #ffa60d !important;background-color: #ffa60d !important;}#rec753177761 .t-btn:not(.t-animate_no-hover):focus-visible {border-color: #ffa60d !important;background-color: #ffa60d !important;}#rec753177761 .t-btn:not(.t-animate_no-hover) {transition-property: background-color, color, border-color, box-shadow;transition-duration: 0.2s;transition-timing-function: ease-in-out;}}</style><style>#rec753177761 .t-menu__link-item{
+-webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+}
+#rec753177761 .t-menu__link-item.t-active:not(.t978__menu-link){
+color:#ffa60d !important; opacity:1 !important;}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec753177761 .t-menu__link-item,
+#rec753177761 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style><style> #rec753177761 .t228__leftcontainer a { font-size: 30px; color: #ffffff; letter-spacing: 2.5px; } #rec753177761 a.t-menu__link-item { font-size: 20px; color: #ffffff; font-weight: 400; } #rec753177761 .t228__right_langs_lang a { font-size: 20px; color: #ffffff; font-weight: 400; }</style><style> #rec753177761 .t228__logo { color: #ffffff; letter-spacing: 2.5px; } @media screen and (min-width: 480px) { #rec753177761 .t228__logo { font-size: 30px; } }</style></div><div id="rec753177762" class="r t-rec" style=" " data-animationappear="off" data-record-type="205" ><!-- cover --><div class="t-cover" id="recorddiv753177762"bgimgfield="img"style="height:100vh;background-image:url('images/tild6666-3063-4764-a533-313931343736__-__resize__20x__10.jpg');"><div class="t-cover__carrier" id="coverCarry753177762"data-content-cover-id="753177762"data-content-cover-bg="images/tild6666-3063-4764-a533-313931343736__10.jpg"data-display-changed="true"data-content-cover-height="100vh"data-content-cover-parallax=""style="height:100vh;background-attachment:scroll; "itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6666-3063-4764-a533-313931343736__10.jpg"></div><div class="t-cover__filter" style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.70));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.70));background-image: -o-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.70));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.70));background-image: linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.70));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66000000', endColorstr='#4c000000');"></div><div class="t-container"><div class="t-width t-width_8" style="margin:0 auto;"><div class="t-cover__wrapper t-valign_middle" style="height:100vh; position: relative;z-index:1;"><div class="t182"><div data-hook-content="covercontent"><div class="t182__wrapper"><div class="t182__title t-title t-title_xl t-animate" data-animate-style="zoomin" data-animate-group="yes" field="title">Ресторан Seaside </div><div class="t182__descr t-descr t-descr_lg t-animate" data-animate-style="zoomin" data-animate-group="yes" field="descr">Легкая атмосфера, европейская кухня</div></div></div></div></div></div></div><!-- arrow --><div class="t-cover__arrow"><div class="t-cover__arrow-wrapper t-cover__arrow-wrapper_animated"><div class="t-cover__arrow_mobile"><svg role="presentation" class="t-cover__arrow-svg" style="fill:#ffffff;" x="0px" y="0px" width="38.417px" height="18.592px" viewBox="0 0 38.417 18.592" style="enable-background:new 0 0 38.417 18.592;"><g><path d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z"/></g></svg></div></div></div><!-- arrow --></div><style> #rec753177762 .t182__title { line-height: 1.3; } #rec753177762 .t182__descr { opacity: 0.7; }</style></div><div id="rec753177763" class="r t-rec" style=" " data-record-type="215" ><a name="about" style="font-size:0;"></a></div><div id="rec753177764" class="r t-rec t-rec_pt_120 t-rec_pb_60" style="padding-top:120px;padding-bottom:60px; " data-record-type="1007" ><!-- t1007 --><style type="text/css">@media screen and (max-width: 960px) {
+#rec753177764 .t1007__line {
+height:1px;
+}
+}</style><div class="t1007"><ul role="list" class="t1007__container t-container"><li 
+class="t1007__col t-col t-col_4 t-item t-animate " data-animate-style="fadein" data-animate-chain="yes" ><div class="t1007__col-wrapper_fisrt t1007__col-wrapper"><div 
+class="t1007__bgimg t-margin_auto t-bgimg " data-original="images/tild3738-3030-4038-b963-343333386632__icsartboard1copy2.svg" 
+bgimgfield="li_img__5066460063910"
+itemscope 
+itemtype="http://schema.org/ImageObject"
+style="width: 60px; height: 60px; background-image: url('images/tild3738-3030-4038-b963-343333386632__icsartboard1copy2.svg');"
+><meta itemprop="image" content="images/tild3738-3030-4038-b963-343333386632__icsartboard1copy2.svg"></div><div class="t1007__descr t-descr t-descr_sm" field="li_descr__5066460063910">Г. Актау, От. Seaside Haven Hotel</div></div> </li><li 
+class="t1007__col t-col t-col_4 t-item t-animate " data-animate-style="fadein" data-animate-chain="yes" ><div class="t1007__line" style="width: 1px; background: #d1d1d1;"></div><div class=" t1007__col-wrapper"><div 
+class="t1007__bgimg t-margin_auto t-bgimg " data-original="images/tild3065-3666-4164-a135-366166646633__icsartboard1copy.svg" 
+bgimgfield="li_img__5066460063911"
+itemscope 
+itemtype="http://schema.org/ImageObject"
+style="width: 60px; height: 60px; background-image: url('images/tild3065-3666-4164-a135-366166646633__icsartboard1copy.svg');"
+><meta itemprop="image" content="images/tild3065-3666-4164-a135-366166646633__icsartboard1copy.svg"></div><div class="t1007__descr t-descr t-descr_sm" field="li_descr__5066460063911">Телефон:<br />+7700 98 18 510</div></div> </li><li 
+class="t1007__col t-col t-col_4 t-item t-animate " data-animate-style="fadein" data-animate-chain="yes" ><div class="t1007__line" style="width: 1px; background: #d1d1d1;"></div><div class=" t1007__col-wrapper"><div 
+class="t1007__bgimg t-margin_auto t-bgimg " data-original="images/tild3433-3738-4165-b362-656562346563__icsartboard1.svg" 
+bgimgfield="li_img__5066460063912"
+itemscope 
+itemtype="http://schema.org/ImageObject"
+style="width: 60px; height: 60px; background-image: url('images/tild3433-3738-4165-b362-656562346563__icsartboard1.svg');"
+><meta itemprop="image" content="images/tild3433-3738-4165-b362-656562346563__icsartboard1.svg"></div><div class="t1007__descr t-descr t-descr_sm" field="li_descr__5066460063912">Мы открыты:<br />12:00 – 00:00</div></div> </li></ul></div></div><div id="rec753177765" class="r t-rec t-rec_pt_60 t-rec_pb_105" style="padding-top:60px;padding-bottom:105px; " data-record-type="127" ><!-- T119 --><div class="t119"><div class="t-container t-align_center"><div class="t-col t-col_8 t-prefix_2"><div class="t119__preface t-descr" field="text"><span style="font-family: Montserrat;">Мы понравимся вам своей легкой атмосферой, уровнем кухни и подачей блюд. Мы любим аристократичную простоту в интерьере, хорошую музыку и неповторимый ризотто нашего шефа.</span></div></div></div></div><style> #rec753177765 .t119__preface { opacity: 1; }</style></div><div id="rec753177766" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-animationappear="off" data-record-type="603" ><!-- t603--><div class="t603"><div class="t603__container t-container_100" style="padding-bottom: 0px;"><div class="t603__tile t603__tile_50" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg t-animate" data-original="images/tild6664-3733-4966-b830-333839383032__989.jpg" 
+bgimgfield="gi_img__0" data-zoom-target="0" data-animate-style="fadeinup" data-animate-chain="yes" data-zoomable="yes" data-img-zoom-url="images/tild6664-3733-4966-b830-333839383032__989.jpg" 
+style="background: url('images/tild6664-3733-4966-b830-333839383032__-__resizeb__20x__989.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild6664-3733-4966-b830-333839383032__989.jpg"> </div></div><div class="t603__tile t603__tile_50" itemscope itemtype="http://schema.org/ImageObject"><div class="t603__blockimg t603__blockimg_4-3 t-bgimg t-animate" data-original="images/tild3836-6535-4633-b037-393337613536__444.jpg" 
+bgimgfield="gi_img__1" data-zoom-target="1" data-animate-style="fadeinup" data-animate-chain="yes" data-zoomable="yes" data-img-zoom-url="images/tild3836-6535-4633-b037-393337613536__444.jpg" 
+style="background: url('images/tild3836-6535-4633-b037-393337613536__-__resizeb__20x__444.jpg') center center no-repeat; background-size:cover;"
+><meta itemprop="image" content="images/tild3836-6535-4633-b037-393337613536__444.jpg"> </div></div></div></div><style></style></div><div id="rec753177769" class="r t-rec" style=" " data-record-type="215" ><a name="menu" style="font-size:0;"></a></div><div id="rec753746311" class="r t-rec" style=" " data-record-type="126" ><!-- T118 --><div class="t118"><div class="t-container"><div class="t-col t-col_12 "><hr class="t118__line" style="background-color:#000000;opacity:0.2;"></div></div></div></div><div id="rec753177770" class="r t-rec t-rec_pt_45 t-rec_pb_45" style="padding-top:45px;padding-bottom:45px; " data-animationappear="off" data-record-type="649" ><!-- T649 --><div class="t649"><div class="t-section__container t-container t-container_flex"><div class="t-col t-col_12 "><div 
+class="t-section__title t-title t-title_xs t-align_center t-margin_auto t-animate" data-animate-style="fadein" data-animate-group="yes"
+field="btitle"
+>Избранные блюда нашего меню</div><div
+class="t-section__descr t-descr t-descr_xl t-align_center t-margin_auto t-animate" data-animate-style="fadeinup" data-animate-group="yes"
+field="bdescr"
+><span style="font-family: Montserrat;">Осеннее меню от шеф повара</span></div></div></div><style>.t-section__descr {max-width: 560px;}#rec753177770 .t-section__title {margin-bottom: 40px;}#rec753177770 .t-section__descr {margin-bottom: 90px;}@media screen and (max-width: 960px) {#rec753177770 .t-section__title {margin-bottom: 20px;}#rec753177770 .t-section__descr {margin-bottom: 60px;}}</style><div class="t-card__container t-container"><div class="t-card__col t-card__col_withoutbtn t649__col t-col t-col_4 t-align_left t-item t-animate" data-animate-style="fadeindown" data-animate-chain="yes"><div class="t649__blockimg t649__blockimg_3-2 t-bgimg" data-original="images/tild6462-3539-4934-a464-353537663061__splitshire6904a.jpg" 
+style="background: url('images/tild6462-3539-4934-a464-353537663061__-__resizeb__20x__splitshire6904a.jpg') center center no-repeat; background-size:cover;"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6462-3539-4934-a464-353537663061__splitshire6904a.jpg"></div><div class="t649__textwrapper t649__sp"><div class="t-card__title t-heading t-heading_sm" field="li_title__1489060481808">Тыквенный суп</div><div class="t-card__descr t-text t-text_sm" field="li_descr__1489060481808"><span style="font-family: Montserrat;">Осенний тыквенный суп. В ингредиентах тыква, шампиньоны, щепотка мускатного ореха.</span><br /><br /><strong>3500 тг</strong></div></div></div><div class="t-card__col t-card__col_withoutbtn t649__col t-col t-col_4 t-align_left t-item t-animate" data-animate-style="fadeindown" data-animate-chain="yes"><div class="t649__blockimg t649__blockimg_3-2 t-bgimg" data-original="images/tild3465-3131-4337-b331-303764366530__splitshire6904.jpg" 
+style="background: url('images/tild3465-3131-4337-b331-303764366530__-__resizeb__20x__splitshire6904.jpg') center center no-repeat; background-size:cover;"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3465-3131-4337-b331-303764366530__splitshire6904.jpg"></div><div class="t649__textwrapper t649__sp"><div class="t-card__title t-heading t-heading_sm" field="li_title__1489060588988">Папарделле</div><div class="t-card__descr t-text t-text_sm" field="li_descr__1489060588988"><span style="font-family: Montserrat;">Итальянская паста с богатым вкусом свеклы и томатным песто, подается с базиликом и горошком</span>.<br /><br /><strong>3990 тг</strong></div></div></div><div class="t-card__col t-card__col_withoutbtn t649__col t-col t-col_4 t-align_left t-item t-animate" data-animate-style="fadeindown" data-animate-chain="yes"><div class="t649__blockimg t649__blockimg_3-2 t-bgimg" data-original="images/tild6439-6530-4037-b061-396138393138__splitshire6904b.jpg" 
+style="background: url('images/tild6439-6530-4037-b061-396138393138__-__resizeb__20x__splitshire6904b.jpg') center center no-repeat; background-size:cover;"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6439-6530-4037-b061-396138393138__splitshire6904b.jpg"></div><div class="t649__textwrapper t649__sp"><div class="t-card__title t-heading t-heading_sm" field="li_title__1489060571494">Линч салат</div><div class="t-card__descr t-text t-text_sm" field="li_descr__1489060571494"><span style="font-family: Montserrat;">Питательный утренний салат - это просто белковая бомба для любителей фитнеса.</span><br /><br /><br /><strong>2190 тг</strong></div></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t649_init', function () {
+t649_init('753177770');
+});
+});</script></div><div id="rec753746638" class="r t-rec t-rec_pt_45 t-rec_pb_45" style="padding-top:45px;padding-bottom:45px;background-image:linear-gradient(0.5turn,rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); " data-record-type="126" data-bg-color="linear-gradient(0.5turn,rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%)"><!-- T118 --><div class="t118"><div class="t-container"><div class="t-col t-col_12 "><hr class="t118__line" style="background-color:#000000;opacity:0.7;"></div></div></div></div><div id="rec753177772" class="r t-rec t-rec_pt_60 t-rec_pb_45" style="padding-top:60px;padding-bottom:45px;background-color:#ededed; " data-record-type="962" data-bg-color="#ededed"><!-- t962 --><div class="t962"><div class="t-container t-align_center"><div class="t-col t-col_6 t-prefix_3"> <img 
+class="t962__img t-img t-animate t962__img_circle"
+imgfield="img"
+style="width:300px;height:300px;"
+src="images/tild6563-3233-4764-a465-633365623839__-__empty__222.png" data-original="images/tild6563-3233-4764-a465-633365623839__222.png" data-animate-style="fadein" data-animate-group="yes" data-animate-order="1" 
+><div
+class="t962__title t-title t-title_xxs t-animate"
+field="title"
+style="padding-top: 50px;padding-bottom: 20px;" data-animate-style="zoomin" data-animate-group="yes" data-animate-order="2" data-animate-delay="0.5" >Аружан Амиргалиева</div><div 
+class="t962__uptitle t-descr t-descr_xs t-animate"
+field="subtitle"
+style="" data-animate-style="fadein" data-animate-group="yes" data-animate-order="3" data-animate-delay="0.3" >Шеф повар Seaside</div><div
+class="t962__descr t-descr t-descr_sm t962_nopadding t-animate"
+field="descr"
+style="padding-bottom: 60px;" data-animate-style="zoomin" data-animate-group="yes" data-animate-order="4" data-animate-delay="0.3" ><span style="font-family: Montserrat;">Аружан выпускница известного университета кулинарии Università del gusto. Принимает участие в крупнейших воркшопах, работала в ресторанах Франции, Бельгии и Италии. У Аружан всегда свежее авторское видение меню.</span></div></div></div></div><style> @media screen and (min-width: 480px) { #rec753177772 .t962__title { font-size: 30px; } } #rec753177772 .t962__uptitle { font-size: 18px; line-height: 1,5; color: #525252; padding-bottom: 40px; } #rec753177772 .t962__descr { padding-top: 0px; }</style></div><div id="rec753177777" class="r t-rec t-rec_pt_75 t-rec_pb_0" style="padding-top:75px;padding-bottom:0px;background-color:#262626; " data-record-type="560" data-bg-color="#262626"><!-- t560--><div class="t560"><div class="t-container"><div class="t-col t-col_8 t-prefix_2 t-align_center"> <div class="t560__title t-title t-title_xs" field="title"><span style="font-family: Montserrat;">Свяжитесь с нами</span></div><div class="t560__text t-text-impact t-text-impact_xs t560__text-bottom-margin" field="text">+7700 98 18 510<br />Республика Казахстан Мангыстауская область Город Актау Отель Seaside Haven Hotel</div><div class="t560__descr t-text t-text_sm" field="text2">Мы открыты ежедневно в 12:00 - 00:00</div></div></div></div><style> #rec753177777 .t560__title { color: #ffffff; } #rec753177777 .t560__text { color: #ffffff; } #rec753177777 .t560__descr { color: #808080; }</style></div><div id="rec753745839" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px;background-color:#262626; " data-record-type="126" data-bg-color="#262626"><!-- T118 --><div class="t118"><div class="t-container"><div class="t-col t-col_12 "><hr class="t118__line" style="background-color:#ededed;opacity:0.2;"></div></div></div></div><div id="rec753745766" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px;background-color:#262626; " data-animationappear="off" data-record-type="464" data-bg-color="#262626"><!-- T464 --><div class="t464"><div class="t-container t-align_left"><div class="t464__col t-col t-col_4"><a class="t464__logo-link" href="/home" ><div class="t464__logo t-title" field="title4"><span style="font-family: Montserrat; color: rgb(237, 237, 237);">Seaside Haven Hotel</span></div></a><div class="t464__text t-descr t-descr_xxs" field="text"><span style="color: rgb(181, 181, 181);">© Сайт создан в рамках дипломного проекта. Не для коммерческого использования.</span></div></div><div class="t464__floatbeaker_lr3"></div><div><div class="t464__col t-col t-col_2 t-prefix_4"><div class="t464__title t-name t-name_xs t464__title_uppercase" field="title">Меню</div><div class="t464__descr t-descr t-descr_xxs" field="descr"><ul><li><span style="font-family: TildaSans;">Главная</span></li><li>Услуги</li><li>Бронирование</li><li>Контакты</li></ul></div></div><div class="t464__col t-col t-col_2"><div class="t464__title t-name t-name_xs t464__title_uppercase" field="title2">Найти нас</div><div class="t464__descr t-descr t-descr_xxs" field="descr2"><ul><li><span style="font-family: Montserrat;">Telegram</span></li><li><span style="font-family: Montserrat;">Instagram</span></li><li><span style="font-family: Montserrat;">WhatsApp</span></li></ul></div></div></div></div></div><style> 
+#rec753745766 .t464__title {
+color: #ffffff;
+}
+#rec753745766 .t464__descr {
+color: #ffffff;
+}</style> <style> #rec753745766 .t464__logo { font-size: 20px; font-weight: 600; font-family: 'Montserrat'; text-transform: uppercase; letter-spacing: 1px; } #rec753745766 .t464__title { font-weight: 500; font-family: 'Montserrat'; text-transform: uppercase; }</style></div><div id="rec753722787" class="r t-rec t-rec_pt_0" style="padding-top:0px; " data-animationappear="off" data-record-type="890" ><!-- t890 --><div class="t890" style="display: none; opacity:1; position:fixed; z-index:99990; bottom:20px;right:20px;"><button type="button" 
+class="t890__arrow" 
+aria-label="Вернуться к началу страницы" 
+style="box-shadow:0px 0px 10px rgba(0,0,0,0.2);"><svg role="presentation" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="50" height="50" rx="50" fill="#ffffff" fill-opacity="0.90" stroke="none" /><path d="M21 27L25.5 22L30 27" stroke="#000000" stroke-width="1" fill="none"/></svg></button></div><script type="text/javascript">t_onReady(function() {
+t_onFuncLoad('t890_init', function(){t890_init('753722787', '');});
+});</script><style>@media screen and (min-width: 981px) {
+#rec753722787 .t890__arrow:hover svg path {
+stroke: #ffffff;
+stroke-width: 1;
+}
+#rec753722787 .t890__arrow:focus-visible svg path {
+stroke: #ffffff;
+stroke-width: 1;
+}
+#rec753722787 .t890__arrow:hover svg rect {
+fill: #cdc2bc;
+fill-opacity: 1;
+}
+#rec753722787 .t890__arrow:focus-visible svg rect {
+fill: #cdc2bc;
+fill-opacity: 1;
+}
+}
+#rec753722787 .t890__arrow {
+border-radius: 53px;
+}</style></div><div id="rec753723153" class="r t-rec" style=" " data-animationappear="off" data-record-type="651" ><!-- T651 --><div class="t651" style=""><button type="button" class="t651__btn" style=""><div class="t651__btn_wrapper t651__btn_animate" style="background:#c3b8b2;"><svg role="presentation" class="t651__icon" style="fill:#6b574e;" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 19.3 20.1"><path d="M4.6 7.6l-.5-.9 2-1.2L4.6 3l-2 1.3-.6-.9 2.9-1.7 2.6 4.1"/><path d="M9.9 20.1c-.9 0-1.9-.3-2.9-.9-1.7-1-3.4-2.7-4.7-4.8-3-4.7-3.1-9.2-.3-11l.5.9C.2 5.7.4 9.7 3 13.9c1.2 2 2.8 3.6 4.3 4.5 1.1.6 2.7 1.1 4.1.3l1.9-1.2L12 15l-2 1.2c-1.2.7-2.8.3-3.5-.8l-3.2-5.2c-.7-1.2-.4-2.7.8-3.5l.5.9c-.7.4-.9 1.3-.5 2l3.2 5.2c.4.7 1.5.9 2.2.5l2.8-1.7 2.6 4.1-2.8 1.7c-.7.5-1.4.7-2.2.7zM13.7 11.3l-.9-.3c.4-1.1.2-2.2-.4-3.1-.6-1-1.7-1.6-2.8-1.7l.1-1c1.5.1 2.8.9 3.6 2.1.7 1.2.9 2.7.4 4z"/><path d="M16.5 11.9l-1-.3c.5-1.8.2-3.7-.8-5.3-1-1.6-2.7-2.6-4.7-2.9l.1-1c2.2.3 4.2 1.5 5.4 3.3 1.2 1.9 1.6 4.1 1 6.2z"/><path d="M18.9 12.5l-1-.3c.7-2.5.2-5.1-1.1-7.2-1.4-2.2-3.7-3.6-6.3-4l.1-1c2.9.4 5.4 2 7 4.4 1.6 2.4 2.1 5.3 1.3 8.1z"/></svg><svg role="presentation" class="t651__icon-close" width="16px" height="16px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd"><rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect><rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect></g></svg></div></button><div class="t651__popup" ><div class="t651__popup-container" style=""><div class="t651__wrapper" ><div class="t651__title t-name t-name_xl">Есть вопросы?<br />Оставьте свой номер телефона и мы свяжемся с вами!</div><form id="form753723153" name='form753723153' role="form" action='https://forms.tildacdn.com/procces/' method='POST' data-formactiontype="2" data-inputbox=".t651__blockinput" class="js-form-proccess " ><input type="hidden" name="formservices[]" value="7be11e51cb4c02e199e14b60d0f06bf2" class="js-formaction-services"><input type="hidden" name="formservices[]" value="02598cc25937bd4901d1f9c7e41d5fc8" class="js-formaction-services"><div class="t651__input-container"><div class="t651__allert-wrapper"><div class="js-errorbox-all t651__blockinput-errorbox t-form__errorbox-text" style="display:none;"><div class="t651__blockinput-errors-text t-descr t-descr_xs"><p class="t651__blockinput-errors-item js-rule-error js-rule-error-all"></p><p class="t651__blockinput-errors-item js-rule-error js-rule-error-req"></p><p class="t651__blockinput-errors-item js-rule-error js-rule-error-email"></p><p class="t651__blockinput-errors-item js-rule-error js-rule-error-name"></p><p class="t651__blockinput-errors-item js-rule-error js-rule-error-phone"></p><p class="t651__blockinput-errors-item js-rule-error js-rule-error-string"></p></div></div><div class="js-successbox t651__blockinput-success t-text t-text_md" style="display:none;"><div class="t651__success-icon"><svg role="img" width="50px" height="50px" viewBox="0 0 50 50"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#222"><path d="M25.0982353,49.2829412 C11.5294118,49.2829412 0.490588235,38.2435294 0.490588235,24.6752941 C0.490588235,11.1064706 11.53,0.0670588235 25.0982353,0.0670588235 C38.6664706,0.0670588235 49.7058824,11.1064706 49.7058824,24.6752941 C49.7058824,38.2441176 38.6664706,49.2829412 25.0982353,49.2829412 L25.0982353,49.2829412 Z M25.0982353,1.83176471 C12.5023529,1.83176471 2.25529412,12.0794118 2.25529412,24.6752941 C2.25529412,37.2705882 12.5023529,47.5182353 25.0982353,47.5182353 C37.6941176,47.5182353 47.9411765,37.2705882 47.9411765,24.6752941 C47.9411765,12.0794118 37.6941176,1.83176471 25.0982353,1.83176471 L25.0982353,1.83176471 Z"></path><path d="M22.8435294,30.5305882 L18.3958824,26.0829412 C18.0511765,25.7382353 18.0511765,25.18 18.3958824,24.8352941 C18.7405882,24.4905882 19.2988235,24.4905882 19.6435294,24.8352941 L22.8429412,28.0347059 L31.7282353,19.1488235 C32.0729412,18.8041176 32.6311765,18.8041176 32.9758824,19.1488235 C33.3205882,19.4935294 33.3205882,20.0517647 32.9758824,20.3964706 L22.8435294,30.5305882 L22.8435294,30.5305882 Z"></path></g></g></svg></div><div class="t651__success-message t-descr t-descr_sm" >Наш менеджер вам обязательно перезвонит :) </div></div></div><div class="t651__input-wrapper"><div class="t651__blockinput"><input type="text" id="input_753723153" name="phone" class="t651__input t-input js-tilda-rule " value="" placeholder="+1 123 1234 5678" data-tilda-req="1" data-tilda-rule="phone" style=" border:1px solid #d1d1d1; "></div><div class="t651__blockbutton"><button type="submit" class="t651__submit t-submit" style="background-color:#c3b9b3;text-transform:uppercase;">Жду!</button> </div></div></div></form><div class="t651__additional-info"><div class="t651__text t-descr t-descr_sm">Или вы можете позвонить по номеру ниже</div><div class="t651__phone t-descr t-descr_sm">+7 707 226 590</div><div class="t651__bottom-text t-text t-text_xs"><u>Звонок бесплатный на территории РК</u></div></div> </div></div></div></div><style></style><script type="text/javascript">t_onReady(function () {
+t_onFuncLoad('t651_initPopup', function () {
+t651_initPopup('753723153');
+});
+});</script><style>@media (hover: hover), (min-width: 0\0) {#rec753723153 .t-submit:hover {box-shadow: 0px 15px 30px -10px rgba(0,11,48,0.2) !important;}#rec753723153 .t-submit:focus-visible {box-shadow: 0px 15px 30px -10px rgba(0,11,48,0.2) !important;}}</style><style> #rec753723153 .t651__title { font-family: 'TildaSans'; }</style></div><div id="rec753754064" class="r t-rec" style=" " data-animationappear="off" data-record-type="270" ><div class="t270"></div><script>t_onReady(function () {
+var hash = window.location.hash;
+t_onFuncLoad('t270_scroll', function () {
+t270_scroll(hash, -3);
+});
+setTimeout(function() {
+var curPath = window.location.pathname;
+var curFullPath = window.location.origin + curPath;
+var recs = document.querySelectorAll('.r');
+Array.prototype.forEach.call(recs, function(rec) {
+var selects = 
+'a[href^="#"]\
+:not([href="#"])\
+:not(.carousel-control)\
+:not(.t-carousel__control)\
+:not([href^="#price"])\
+:not([href^="#submenu"])\
+:not([href^="#popup"])\
+:not([href*="#zeropopup"])\
+:not([href*="#closepopup"])\
+:not([href*="#closeallpopup"])\
+:not([href^="#prodpopup"])\
+:not([href^="#order"])\
+:not([href^="#!"])\
+:not([target="_blank"]),' +
+'a[href^="' + curPath + '#"]\
+:not([href*="#!/tfeeds/"])\
+:not([href*="#!/tproduct/"])\
+:not([href*="#!/tab/"])\
+:not([href*="#popup"])\
+:not([href*="#zeropopup"])\
+:not([href*="#closepopup"])\
+:not([href*="#closeallpopup"])\
+:not([target="_blank"]),' +
+'a[href^="' + curFullPath + '#"]\
+:not([href*="#!/tfeeds/"])\
+:not([href*="#!/tproduct/"])\
+:not([href*="#!/tab/"])\
+:not([href*="#popup"])\
+:not([href*="#zeropopup"])\
+:not([href*="#closepopup"])\
+:not([href*="#closeallpopup"])\
+:not([target="_blank"])';
+var elements = rec.querySelectorAll(selects);
+Array.prototype.forEach.call(elements, function(element) {
+element.addEventListener('click', function (event) {
+event.preventDefault();
+var hash = this.hash.trim();
+t_onFuncLoad('t270_scroll', function () {
+t270_scroll(hash, -3);
+});
+});
+});
+});
+if (document.querySelectorAll('.js-store').length > 0 || document.querySelectorAll('.js-feed').length > 0) {
+t_onFuncLoad('t270_scroll', function () {
+t270_scroll(hash, -3, 1);
+});
+}
+}, 500);
+setTimeout(function() {
+var hash = window.location.hash;
+if (hash && document.querySelectorAll('a[name="' + hash.slice(1) + '"]').length > 0) {
+if (window.isMobile) {
+t_onFuncLoad('t270_scroll', function () {
+t270_scroll(hash, 0);
+});
+} else {
+t_onFuncLoad('t270_scroll', function () {
+t270_scroll(hash, 0);
+});
+}
+}
+}, 1000);
+window.addEventListener('popstate', function() {
+var hash = window.location.hash;
+if (hash && document.querySelectorAll('a[name="' + hash.slice(1) + '"]').length > 0) {
+if (window.isMobile) {
+t_onFuncLoad('t270_scroll', function () {
+t270_scroll(hash, 0);
+});
+} else {
+t_onFuncLoad('t270_scroll', function () {
+t270_scroll(hash, 0);
+});
+}
+}
+});
+});</script></div></div><!--/allrecords-->
